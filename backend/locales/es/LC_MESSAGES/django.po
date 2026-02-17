@@ -1,0 +1,719 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-11 11:08-0500\n"
+"PO-Revision-Date: 2025-07-10 22:27-0500\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: apps/authentication/choices.py:5 apps/withdrawals/choices.py:13
+msgid "Used"
+msgstr "Usado"
+
+#: apps/authentication/choices.py:6 apps/withdrawals/choices.py:12
+msgid "Unused"
+msgstr "No usado"
+
+#: apps/authentication/choices.py:7
+msgid "Invalid"
+msgstr "Inválido"
+
+#: apps/authentication/choices.py:8
+msgid "Verified"
+msgstr "Verificado"
+
+#: apps/authentication/models.py:17
+msgid "Ip address"
+msgstr "Dirección IP"
+
+#: apps/authentication/models.py:19
+msgid "Phone number"
+msgstr "Número de teléfono"
+
+#: apps/authentication/models.py:19
+msgid "Input phone number"
+msgstr "Introduce el número de teléfono"
+
+#: apps/authentication/models.py:22
+msgid "USDT wallet"
+msgstr "Billetera USDT"
+
+#: apps/authentication/models.py:24
+msgid "Balance"
+msgstr "Saldo"
+
+#: apps/authentication/models.py:26
+msgid "Investment Balance"
+msgstr "Saldo de inversión"
+
+#: apps/authentication/models.py:28
+msgid "Referr code"
+msgstr "Código de referido"
+
+#: apps/authentication/models.py:30
+msgid "Extra direct payment"
+msgstr "Pago directo extra"
+
+#: apps/authentication/models.py:30
+msgid "Input extra percentage"
+msgstr "Introduce el porcentaje extra"
+
+#: apps/authentication/models.py:33
+msgid "Is fundator"
+msgstr "Es fundador"
+
+#: apps/authentication/models.py:33
+msgid "Check if is fundator"
+msgstr "Marcar si es fundador"
+
+#: apps/authentication/models.py:36
+msgid "Bank Account Number"
+msgstr ""
+
+#: apps/authentication/models.py:37 apps/withdrawals/models.py:56
+msgid "Bank Name"
+msgstr ""
+
+#: apps/authentication/models.py:38
+msgid "Bank Country"
+msgstr ""
+
+#: apps/authentication/models.py:39
+msgid "Bank Swift Code"
+msgstr ""
+
+#: apps/authentication/models.py:97 apps/authentication/models.py:101
+#: apps/investment_plans/models.py:14 apps/payments/models.py:10
+#: apps/tree/models.py:8 apps/tree/models.py:23 apps/withdrawals/models.py:28
+#: apps/withdrawals/models.py:119
+msgid "User"
+msgstr "Usuario"
+
+#: apps/authentication/models.py:98
+msgid "Users"
+msgstr "Usuarios"
+
+#: apps/authentication/models.py:102
+msgid "Code"
+msgstr "Código"
+
+#: apps/authentication/models.py:103 apps/investment_plans/choices.py:9
+#: apps/withdrawals/choices.py:14
+msgid "Expired"
+msgstr "Expirado"
+
+#: apps/authentication/models.py:104
+msgid "Status code"
+msgstr "Estado del código"
+
+#: apps/authentication/models.py:105
+msgid "Active"
+msgstr "Activo"
+
+#: apps/authentication/models.py:108
+msgid "User codes"
+msgstr "Códigos de usuario"
+
+#: apps/authentication/models.py:109
+msgid "Users codes"
+msgstr "Códigos de usuarios"
+
+#: apps/authentication/views.py:34
+msgid "Avatar updated successfully!"
+msgstr "¡Avatar actualizado con éxito!"
+
+#: apps/authentication/views.py:54
+msgid ""
+"We have sent a secret code to your email address! Please check your inbox "
+"and follow the instructions to complete the process."
+msgstr ""
+"¡Hemos enviado un código secreto a tu dirección de correo electrónico! Por "
+"favor, revisa tu bandeja de entrada y sigue las instrucciones para completar "
+"el proceso."
+
+#: apps/authentication/views.py:62
+msgid "User profile updated successfully!"
+msgstr "¡Perfil de usuario actualizado con éxito!"
+
+#: apps/authentication/views.py:66
+msgid "Secret code is ivalid, please try another one."
+msgstr "El código secreto no es válido, por favor intenta con otro."
+
+#: apps/authentication/views.py:76
+msgid "Password updated successfully!"
+msgstr "¡Contraseña actualizada con éxito!"
+
+#: apps/authentication/views.py:77
+msgid "Current password don't match"
+msgstr "La contraseña actual no coincide"
+
+#: apps/authentication/views.py:105
+msgid "Account is not active, please contact support"
+msgstr "La cuenta no está activa, por favor contacta a soporte"
+
+#: apps/authentication/views.py:109
+msgid "Credentials aren't valid"
+msgstr "Las credenciales no son válidas"
+
+#: apps/authentication/views.py:113
+msgid "User doesn't exist"
+msgstr "El usuario no existe"
+
+#: apps/authentication/views.py:117
+#, python-brace-format
+msgid "A server error has ocurred {ex}"
+msgstr "Ha ocurrido un error en el servidor {ex}"
+
+#: apps/authentication/views.py:152
+msgid "Email address already exists, try again new email."
+msgstr ""
+"La dirección de correo electrónico ya existe, intenta con un nuevo correo."
+
+#: apps/authentication/views.py:171
+msgid "Referral code is not valid"
+msgstr "El código de referido no es válido"
+
+#: apps/authentication/views.py:204
+msgid ""
+"We have sent a password reset code to your email address! Please check your "
+"inbox and follow the instructions to complete the process."
+msgstr ""
+"¡Hemos enviado un código de restablecimiento de contraseña a tu dirección de "
+"correo electrónico! Por favor, revisa tu bandeja de entrada y sigue las "
+"instrucciones para completar el proceso."
+
+#: apps/authentication/views.py:208 apps/authentication/views.py:246
+msgid "There is no user registered with the provided email address."
+msgstr ""
+"No hay ningún usuario registrado con la dirección de correo electrónico "
+"proporcionada."
+
+#: apps/authentication/views.py:239
+msgid "Your password has been successfully reset, you can now log in!"
+msgstr ""
+"¡Tu contraseña ha sido restablecida con éxito, ya puedes iniciar sesión!"
+
+#: apps/authentication/views.py:242
+msgid "Please request a new reset code, otp invalid. Try again"
+msgstr ""
+"Por favor, solicita un nuevo código de restablecimiento, el código OTP no es "
+"válido. Inténtalo de nuevo."
+
+#: apps/authentication/views.py:249
+msgid ""
+"The code is invalid or has expired. Please check and try to reset the "
+"password again."
+msgstr ""
+"El código no es válido o ha expirado. Por favor, verifica e intenta "
+"restablecer la contraseña de nuevo."
+
+#: apps/core/models.py:10
+msgid "Default users avatar"
+msgstr "Avatar de usuarios por defecto"
+
+#: apps/core/models.py:12
+msgid "Project name"
+msgstr "Nombre del proyecto"
+
+#: apps/core/models.py:15
+msgid "Logo"
+msgstr "Logo"
+
+#: apps/core/models.py:18
+msgid "Dark Logo"
+msgstr "Logo oscuro"
+
+#: apps/core/models.py:25
+msgid "Currency abbreviation"
+msgstr "Abreviatura de la moneda"
+
+#: apps/core/models.py:27
+msgid "Minimun investment amount"
+msgstr "Monto mínimo de inversión"
+
+#: apps/core/models.py:29
+msgid "Minimum withdrawal amount"
+msgstr "Monto mínimo de retiro"
+
+#: apps/core/models.py:31
+msgid "Receiver wallet"
+msgstr "Billetera receptora"
+
+#: apps/core/models.py:34
+msgid "Network payments"
+msgstr "Red de pagos"
+
+#: apps/core/models.py:37
+msgid "Withdrawal days"
+msgstr "Días de retiro"
+
+#: apps/core/models.py:39
+msgid "Daily payment"
+msgstr "Pago diario"
+
+#: apps/core/models.py:42
+msgid "Blocked days for investment"
+msgstr "Días bloqueados para inversión"
+
+#: apps/core/models.py:71 apps/core/models.py:72
+msgid "General settings"
+msgstr "Configuración general"
+
+#: apps/investment_plans/choices.py:6
+msgid "Pending"
+msgstr "Pendiente"
+
+#: apps/investment_plans/choices.py:7
+msgid "Approved"
+msgstr "Aprobado"
+
+#: apps/investment_plans/choices.py:8
+msgid "Refused"
+msgstr "Rechazado"
+
+#: apps/investment_plans/models.py:19
+msgid "Date to withdraw"
+msgstr "Fecha para retirar"
+
+#: apps/investment_plans/models.py:21
+msgid "Earnings"
+msgstr "Ganancias"
+
+#: apps/investment_plans/models.py:23
+msgid "Investment status"
+msgstr "Estado de la inversión"
+
+#: apps/investment_plans/models.py:25 apps/withdrawals/models.py:33
+msgid "Withdrawn amount"
+msgstr "Monto retirado"
+
+#: apps/investment_plans/models.py:72
+msgid "Amount invest"
+msgstr "Monto a invertir"
+
+#: apps/investment_plans/models.py:83
+msgid "User invest"
+msgstr "Inversión de usuario"
+
+#: apps/investment_plans/models.py:86
+msgid "Pay with balance"
+msgstr "Pagar con saldo"
+
+#: apps/investment_plans/models.py:88
+msgid "Before investment value"
+msgstr "Valor antes de la inversión"
+
+#: apps/investment_plans/models.py:94
+msgid "Available for withdrawal date"
+msgstr "Fecha disponible para retiro"
+
+#: apps/investment_plans/models.py:97
+msgid "Withdrawn from this deposit"
+msgstr "Retirado de este depósito"
+
+#: apps/investment_plans/models.py:101
+msgid "Es reinversión?"
+msgstr ""
+
+#: apps/investment_plans/models.py:102
+msgid "Es pagado con saldo normal?"
+msgstr ""
+
+#: apps/investment_plans/models.py:174
+msgid "Investment plan transaction"
+msgstr "Transacción de plan de inversión"
+
+#: apps/investment_plans/models.py:175
+msgid "Investment plan transactions"
+msgstr "Transacciones de plan de inversión"
+
+#: apps/investment_plans/views.py:38
+msgid "Payment with balance has been made successfully!"
+msgstr "¡El pago con saldo se ha realizado con éxito!"
+
+#: apps/investment_plans/views.py:40
+msgid "You don't have enough balance, try again."
+msgstr "No tienes saldo suficiente, inténtalo de nuevo."
+
+#: apps/investment_plans/views.py:48 apps/investment_plans/views.py:59
+msgid "Investment amount must be at least ${} USDT, please try again."
+msgstr ""
+"El monto de la inversión debe ser de al menos ${} USDT, por favor inténtalo "
+"de nuevo."
+
+#: apps/investment_plans/views.py:82
+msgid "An error has ocurred to create the payment, try again. "
+msgstr "Ha ocurrido un error al crear el pago, inténtalo de nuevo."
+
+#: apps/investment_plans/views.py:106
+msgid "Transaction paid successfully."
+msgstr "Transacción pagada con éxito."
+
+#: apps/investment_plans/views.py:108
+msgid "Waiting for funds"
+msgstr "Esperando fondos"
+
+#: apps/investment_plans/views.py:110
+msgid "User hasn't pending payments. "
+msgstr "El usuario no tiene pagos pendientes."
+
+#: apps/investment_plans/views.py:113
+msgid "An error has ocurred to verify the payment, try again. "
+msgstr "Ha ocurrido un error al verificar el pago, inténtalo de nuevo."
+
+#: apps/investment_plans/views.py:205
+msgid "Las reinversiones solo están habilitadas los días sabados y domingos."
+msgstr ""
+
+#: apps/investment_plans/views.py:216
+msgid "Cantidad y tipo son obligatorios."
+msgstr ""
+
+#: apps/investment_plans/views.py:226
+msgid "Cantidad ingresada inválida."
+msgstr ""
+
+#: apps/investment_plans/views.py:232
+msgid "Argumento inválido."
+msgstr ""
+
+#: apps/investment_plans/views.py:243
+msgid "Insuficiente saldo para reinvertir."
+msgstr ""
+
+#: apps/investment_plans/views.py:251
+msgid "Insuficiente saldo de utilidades para reinvertir."
+msgstr ""
+
+#: apps/investment_plans/views.py:268
+#| msgid "Code sent successfully"
+msgid "Reinvestment made successfully!"
+msgstr "Reinversión realizada!"
+
+#: apps/payments/models.py:13
+msgid "Payment date"
+msgstr "Fecha de pago"
+
+#: apps/payments/models.py:16
+msgid "Base user payment"
+msgstr "Pago base de usuario"
+
+#: apps/payments/models.py:17
+msgid "Base user payments"
+msgstr "Pagos base de usuario"
+
+#: apps/payments/models.py:22 apps/payments/models.py:50
+msgid "Amount paid"
+msgstr "Monto pagado"
+
+#: apps/payments/models.py:27
+msgid "Level payment"
+msgstr "Pago de nivel"
+
+#: apps/payments/models.py:39
+msgid "Direct Payment"
+msgstr "Pago Directo"
+
+#: apps/payments/models.py:40
+msgid "Direct payments"
+msgstr "Pagos directos"
+
+#: apps/payments/models.py:52
+msgid "Current investment amount"
+msgstr "Monto de inversión actual"
+
+#: apps/payments/models.py:55
+msgid "Active user investment"
+msgstr "Inversión de usuario activa"
+
+#: apps/payments/models.py:57
+msgid "Investment progress"
+msgstr "Progreso de la inversión"
+
+#: apps/payments/models.py:70
+msgid "Pasive payment"
+msgstr "Pago pasivo"
+
+#: apps/payments/models.py:71
+msgid "Pasive payments"
+msgstr "Pagos pasivos"
+
+#: apps/tree/models.py:9
+msgid "Select user to add in the tree"
+msgstr "Selecciona el usuario a añadir en el árbol"
+
+#: apps/tree/models.py:15 apps/tree/models.py:16
+msgid "Unilevel Tree"
+msgstr "Árbol Uninivel"
+
+#: apps/tree/models.py:23
+msgid "Select User"
+msgstr "Seleccionar Usuario"
+
+#: apps/tree/models.py:26
+msgid "Refrerred"
+msgstr "Referido"
+
+#: apps/tree/models.py:26
+msgid "Select user"
+msgstr "Seleccionar usuario"
+
+#: apps/tree/models.py:29
+msgid "Is master code"
+msgstr "Es código maestro"
+
+#: apps/tree/models.py:30
+msgid "Check for master code"
+msgstr "Marcar para código maestro"
+
+#: apps/tree/models.py:38
+msgid "Referr"
+msgstr "Referido"
+
+#: apps/tree/models.py:39
+msgid "Referrers"
+msgstr "Referidos"
+
+#: apps/tree/views.py:30
+msgid "Referral master code activated!"
+msgstr "¡Código maestro de referido activado!"
+
+#: apps/tree/views.py:32
+msgid "You dont have permissions to activate master codes!"
+msgstr "¡No tienes permisos para activar códigos maestros!"
+
+#: apps/withdrawals/choices.py:6
+msgid "Utilidad"
+msgstr ""
+
+#: apps/withdrawals/choices.py:7
+msgid "Saldo"
+msgstr ""
+
+#: apps/withdrawals/choices.py:8
+msgid "Inversión"
+msgstr ""
+
+#: apps/withdrawals/models.py:13
+msgid "Crypto"
+msgstr ""
+
+#: apps/withdrawals/models.py:14
+msgid "FIAT"
+msgstr ""
+
+#: apps/withdrawals/models.py:21
+#| msgid "Withdrawal days"
+msgid "Withdrawal Method"
+msgstr "Método de retiro"
+
+#: apps/withdrawals/models.py:35
+msgid "Withdrawn date"
+msgstr "Fecha de retiro"
+
+#: apps/withdrawals/models.py:37
+msgid "Withdrawn payed date"
+msgstr "Fecha de pago del retiro"
+
+#: apps/withdrawals/models.py:42
+msgid "Fee"
+msgstr "Comisión"
+
+#: apps/withdrawals/models.py:44
+msgid "Payment link (Tron scan)"
+msgstr "Enlace de pago (Tron scan)"
+
+#: apps/withdrawals/models.py:46
+msgid "Wallet address"
+msgstr "Dirección de la billetera"
+
+#: apps/withdrawals/models.py:50
+msgid "Used code"
+msgstr "Código usado"
+
+#: apps/withdrawals/models.py:55
+#| msgid "Phone number"
+msgid "Account Number"
+msgstr "Número de cuenta"
+
+#: apps/withdrawals/models.py:57
+msgid "Country (Bank)"
+msgstr ""
+
+#: apps/withdrawals/models.py:58
+msgid "SWIFT/BIC Code"
+msgstr ""
+
+#: apps/withdrawals/models.py:71
+msgid "Please select a valid wallet address in your profile."
+msgstr "Por favor, selecciona una dirección de billetera válida en tu perfil."
+
+#: apps/withdrawals/models.py:76
+msgid "Sorry, Withdrawals are only available on Thursdays and Fridays"
+msgstr "Lo sentimos, los retiros solo están disponibles los jueves y viernes"
+
+#: apps/withdrawals/models.py:110
+msgid "Withdrawal"
+msgstr "Retiro"
+
+#: apps/withdrawals/models.py:111
+msgid "Withdrawals"
+msgstr "Retiros"
+
+#: apps/withdrawals/models.py:117
+msgid "Verification code"
+msgstr "Código de verificación"
+
+#: apps/withdrawals/models.py:122
+msgid "Code statuses"
+msgstr "Estados del código"
+
+#: apps/withdrawals/models.py:144
+msgid "Withdrawal confirmation code"
+msgstr "Código de confirmación de retiro"
+
+#: apps/withdrawals/models.py:145
+msgid "Withdrawal confirmation codes"
+msgstr "Códigos de confirmación de retiro"
+
+#: apps/withdrawals/serializers.py:36
+msgid "Please select a valid wallet address."
+msgstr "Por favor, selecciona una dirección de billetera válida."
+
+#: apps/withdrawals/serializers.py:45
+msgid "Full your bank data in your profile to continue."
+msgstr "Completa tus datos bancarios para continuar."
+
+#: apps/withdrawals/serializers.py:48
+msgid "Secret code doesn't exist or already have expired."
+msgstr "El código secreto no existe o ya ha expirado."
+
+#: apps/withdrawals/serializers.py:72
+msgid "Min withdrawal amount is {} USD. Please try again."
+msgstr "El monto mínimo de retiro es de ${} USD. Por favor inténtalo de nuevo."
+
+#: apps/withdrawals/serializers.py:75
+#| msgid "Min withdrawal amount is {} USD. Please try again."
+msgid "Min FIAT withdrawal amount is {} USD. Please try again."
+msgstr "El monto mínimo de retiro FIAT es de ${} USD. Por favor inténtalo de nuevo."
+
+#: apps/withdrawals/serializers.py:80
+#, python-brace-format
+msgid "You can't exceed your available balance ${user.balance} USD"
+msgstr "No puedes exceder tu saldo disponible de ${user.balance} USD"
+
+#: apps/withdrawals/serializers.py:90
+msgid ""
+"No puedes exceder tu disponible de utilidades ${(user.investment_balance)} "
+"USD."
+msgstr ""
+
+#: apps/withdrawals/serializers.py:98
+msgid "You don't have an active investment to withdraw from."
+msgstr "No tienes una inversión activa de la cual retirar."
+
+#: apps/withdrawals/serializers.py:109
+msgid ""
+"Tu retiro de inversión no puede exceder el máximo retirable "
+"${(total_available_from_deposits)} USD."
+msgstr ""
+
+#: apps/withdrawals/views.py:52
+msgid "Code sent successfully"
+msgstr "Código enviado con éxito"
+
+#: capital_market/settings/base.py:145
+msgid "Spanish"
+msgstr "Español"
+
+#: capital_market/settings/base.py:146
+msgid "English"
+msgstr "Inglés"
+
+#~ msgid "Update profile secret code"
+#~ msgstr "Actualizar código secreto del perfil"
+
+#, python-brace-format
+#~ msgid ""
+#~ "We received a request to update your profile.\n"
+#~ "To continue with the update profile process, please use the following "
+#~ "secret code: {user_code}\n"
+#~ "This code is valid for a limited time, so make sure to use it soon. If "
+#~ "you did not make this request or do not wish to update your profile, you "
+#~ "can ignore this message.\n"
+#~ "\n"
+#~ "Please do not share this code with anyone for security reasons."
+#~ msgstr ""
+#~ "Recibimos una solicitud para actualizar tu perfil.\n"
+#~ "Para continuar con el proceso de actualización de perfil, por favor "
+#~ "utiliza el siguiente código secreto: {user_code}\n"
+#~ "Este código es válido por un tiempo limitado, así que asegúrate de usarlo "
+#~ "pronto. Si tú no hiciste esta solicitud o no deseas actualizar tu perfil, "
+#~ "puedes ignorar este mensaje.\n"
+#~ "\n"
+#~ "Por favor, no compartas este código con nadie por razones de seguridad."
+
+#~ msgid "Password Recovery"
+#~ msgstr "Recuperación de Contraseña"
+
+#, python-brace-format
+#~ msgid ""
+#~ "We received a request to reset the password for your account.\n"
+#~ "To continue with the password reset process, please use the following "
+#~ "verification code: {user_code}\n"
+#~ "This code is valid for a limited time, so make sure to use it soon. If "
+#~ "you did not make this request or do not wish to reset your password, you "
+#~ "can ignore this message.\n"
+#~ "\n"
+#~ "Please do not share this code with anyone for security reasons."
+#~ msgstr ""
+#~ "Recibimos una solicitud para restablecer la contraseña de tu cuenta.\n"
+#~ "Para continuar con el proceso de restablecimiento de contraseña, por "
+#~ "favor utiliza el siguiente código de verificación: {user_code}\n"
+#~ "Este código es válido por un tiempo limitado, así que asegúrate de usarlo "
+#~ "pronto. Si tú no hiciste esta solicitud o no deseas restablecer tu "
+#~ "contraseña, puedes ignorar este mensaje.\n"
+#~ "\n"
+#~ "Por favor, no compartas este código con nadie por razones de seguridad."
+
+#~ msgid "Utility withdrawal"
+#~ msgstr "Retiro de utilidad"
+
+#~ msgid "Balance withdrawal"
+#~ msgstr "Retiro de saldo"
+
+#~ msgid ""
+#~ "You can't exceed your available passive withdrawal amount "
+#~ "${(total_available_from_deposits + user.investment_balance)} USD."
+#~ msgstr ""
+#~ "No puedes exceder tu monto de retiro pasivo disponible de "
+#~ "${(total_available_from_deposits + user.investment_balance)} USD."
+
+#~ msgid "Your Secret Code for Withdrawal"
+#~ msgstr "Tu Código Secreto para el Retiro"
+
+#, python-brace-format
+#~ msgid ""
+#~ "Congrats,\n"
+#~ "\n"
+#~ "Your secret code is: {secret_code}\n"
+#~ "\n"
+#~ "Thanks for using our service"
+#~ msgstr ""
+#~ "Felicidades,\n"
+#~ "\n"
+#~ "Tu código secreto es: {secret_code}\n"
+#~ "\n"
+#~ "Gracias por usar nuestro servicio"

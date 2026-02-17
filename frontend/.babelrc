@@ -1,0 +1,14 @@
+{
+  "presets": [
+    "@babel/preset-env",         // Soporte para las nuevas características de JavaScript
+    "@babel/preset-react",       // Soporte para JSX
+    "@babel/preset-typescript"   // Soporte para TypeScript
+  ],
+  "plugins": [
+    ["i18next-extract", {
+      "locales": ["en", "es"],
+      "keyAsDefaultValue": true,
+      "outputPath": "src/locales/{{locale}}/translation.json"
+    }]
+  ]
+}

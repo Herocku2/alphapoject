@@ -1,0 +1,195 @@
+{
+  "": "",
+  "Account": "Account",
+  "Account Settings": "Account Settings",
+  "Active": "Active",
+  "All your investments registry and payment method": {
+    "": ""
+  },
+  "All your payments and date": {
+    "": ""
+  },
+  "All your referrals": {
+    "": ""
+  },
+  "All your withdrawals": {
+    "": ""
+  },
+  "Already have an account?": "Already have an account?",
+  "Amount": "Amount",
+  "Amount is invalid": "Amount is invalid",
+  "Amount is required": "Amount is required",
+  "Amount must be positive": "Amount must be positive",
+  "Approved": "Approved",
+  "At least one lowercase character": "At least one lowercase character",
+  "At least one number, symbol, or whitespace character": "At least one number, symbol, or whitespace character",
+  "Avatar updated successfully": "Avatar updated successfully",
+  "Balance": "Balance",
+  "Basic info, like your name and address that will displayed in public": "Basic info, like your name and address that will displayed in public",
+  "Captcha is required": "Captcha is required",
+  "Change Password": "Change Password",
+  "Change avatar": "Change avatar",
+  "Change password on your account": "Change password on your account",
+  "Click here for view more information": {
+    "": ""
+  },
+  "Click to change avatar image": "Click to change avatar image",
+  "Code": "Code",
+  "Confirm Password": "Confirm Password",
+  "Confirm password": "Confirm password",
+  "Copy link": "Copy link",
+  "Create an Account": "Create an Account",
+  "Current Password": "Current Password",
+  "Current password is required": "Current password is required",
+  "Daily": "Daily",
+  "Dashboard": "Dashboard",
+  "Date": "Date",
+  "Detail": "Detail",
+  "Direct Payments": "Direct Payments",
+  "Direct users": "Direct users",
+  "Don't have an account?": "Don't have an account?",
+  "Email": "Email",
+  "Email or username is required": "Email or username is required",
+  "Email must be a valid email": "Email must be a valid email",
+  "Enter your email and a reset link will sent to you, let's access our the best recommendation for you": {
+    "": ""
+  },
+  "First name": "First name",
+  "First name is required": "First name is required",
+  "Forgot Password": "Forgot Password",
+  "Forgot password?": "Forgot password?",
+  "Generate secret code": "Generate secret code",
+  "Good Afternoon": "Good Afternoon",
+  "Good Morning": "Good Morning",
+  "Good Night": "Good Night",
+  "Hash": "Hash",
+  "Hey, Enter your details to get login to your account": {
+    "": ""
+  },
+  "I agree to all the": "I agree to all the",
+  "If you forgot your password, well, then we'll email you a verfsication code to reset your password": {
+    "": ""
+  },
+  "If you have a question or a request please contact us by telegram": {
+    "": ""
+  },
+  "Inactive": "Inactive",
+  "Increase my investment": "Increase my investment",
+  "Indirect users": "Indirect users",
+  "Invalid email": "Invalid email",
+  "Invest": "Invest",
+  "Invest amount is required": "Invest amount is required",
+  "Invest now": "Invest now",
+  "Investment": "Investment",
+  "Investment History": "Investment History",
+  "Investment amount": "Investment amount",
+  "Investment progress": "Investment progress",
+  "Investment value": "Investment value",
+  "Investor": "Investor",
+  "Last name": "Last name",
+  "Last name is required": "Last name is required",
+  "Left side": "Left side",
+  "Let's get you all set up, so you can verify your personal account and begin setting up your profile": {
+    "": ""
+  },
+  "Level": "Level",
+  "Link copied!": "Link copied!",
+  "Login": "Login",
+  "Login successfull!": "Login successfull!",
+  "Login to your account": "Login to your account",
+  "Logout": "Logout",
+  "Main": "Main",
+  "Minimum 8 characters long - the more, the better": "Minimum 8 characters long - the more, the better",
+  "My Payments": "My Payments",
+  "My Referrals": "My Referrals",
+  "My Unilevel Tree": "My Unilevel Tree",
+  "My Withdrawals": "My Withdrawals",
+  "My investment": "My investment",
+  "My investments history": "My investments history",
+  "New Password": "New Password",
+  "New investment value": "New investment value",
+  "No phone number": "No phone number",
+  "OTP is required": "OTP is required",
+  "Paid with balance": "Paid with balance",
+  "Pasive Payments": "Pasive Payments",
+  "Password": "Password",
+  "Password changed successfully": "Password changed successfully",
+  "Password confirmation is required": "Password confirmation is required",
+  "Password is required": "Password is required",
+  "Password reset successful!": "Password reset successful!",
+  "Password updated successfully": "Password updated successfully",
+  "Passwords do not match": "Passwords do not match",
+  "Passwords dont match": {
+    "": ""
+  },
+  "Pay with my pasive balance": "Pay with my pasive balance",
+  "Payment method": "Payment method",
+  "Payments": "Payments",
+  "Pending": "Pending",
+  "Personal Information": "Personal Information",
+  "Phone": "Phone",
+  "Phone number is required": "Phone number is required",
+  "Phone number must be numeric": "Phone number must be numeric",
+  "Please send ": "Please send ",
+  "Points": "Points",
+  "Profile": "Profile",
+  "Profile photo": "Profile photo",
+  "Profile updated successfully!": "Profile updated successfully!",
+  "Referrals": "Referrals",
+  "Refused": "Refused",
+  "Register": "Register",
+  "Registration date": "Registration date",
+  "Reset": "Reset",
+  "Reset Password": "Reset Password",
+  "Return to login": "Return to login",
+  "Right side": "Right side",
+  "Secret code": "Secret code",
+  "Secret code is required": {
+    "": ""
+  },
+  "Security": "Security",
+  "Send code": "Send code",
+  "Set your pictures, name, bio, and others public-facing information": {
+    "": ""
+  },
+  "Side": "Side",
+  "Status": "Status",
+  "Submit": "Submit",
+  "Support Center": "Support Center",
+  "Terms & Conditions": "Terms & Conditions",
+  "The password can only contain a maximum of 20 characters": {
+    "": ""
+  },
+  "The password must be at least 8 characters long": {
+    "": ""
+  },
+  "Total Profit": "Total Profit",
+  "Transaction created successfully!": "Transaction created successfully!",
+  "Transaction successfully, investment increased!": "Transaction successfully, investment increased!",
+  "USDT BEP20": "USDT BEP20",
+  "USDT wallet is required": "USDT wallet is required",
+  "Unilevel Tree": "Unilevel Tree",
+  "Unilevel tree": "Unilevel tree",
+  "User": "User",
+  "Username": "Username",
+  "Username is required": "Username is required",
+  "Verify payment": "Verify payment",
+  "View": "View",
+  "Wallet": "Wallet",
+  "Wallet USDT": "Wallet USDT",
+  "Wallet address USDT BEP20 is required": {
+    "": ""
+  },
+  "Wallet invalid, register USDT wallet on profile section and try again!": "Wallet invalid, register USDT wallet on profile section and try again!",
+  "Withdrawal made successfully!": "Withdrawal made successfully!",
+  "Withdrawals": "Withdrawals",
+  "Your current investment": "Your current investment",
+  "Your root tree": {
+    "": ""
+  },
+  "and Fees": "and Fees",
+  "and then click on verify payment to confirm transaction": {
+    "": ""
+  },
+  "days": "days"
+}

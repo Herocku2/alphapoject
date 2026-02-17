@@ -1,0 +1,96 @@
+/* Modo Oscuro Moderno - Eliminando resplandor azul neón */
+
+/* Eliminar cualquier box-shadow azul en modo oscuro */
+html[data-bs-theme="dark"] .auth-layout {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+html[data-bs-theme="dark"] .auth-layout .card {
+    background-color: #161b22 !important;
+    border: 1px solid #30363d !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Eliminar resplandor del body en modo oscuro */
+html[data-bs-theme="dark"] body {
+    background-color: #0d1117 !important;
+    box-shadow: none !important;
+}
+
+html[data-bs-theme="dark"] body::before,
+html[data-bs-theme="dark"] body::after {
+    display: none !important;
+}
+
+/* Mejorar contraste de inputs en modo oscuro */
+html[data-bs-theme="dark"] .form-control {
+    background-color: #1c2128 !important;
+    border-color: #30363d !important;
+    color: #e6edf3 !important;
+}
+
+html[data-bs-theme="dark"] .form-control::placeholder {
+    color: #8b949e !important;
+}
+
+html[data-bs-theme="dark"] .form-control:focus {
+    background-color: #1c2128 !important;
+    border-color: #58a6ff !important;
+    box-shadow: 0 0 0 0.25rem rgba(88, 166, 255, 0.15) !important;
+}
+
+/* Mejorar botón primario en modo oscuro */
+html[data-bs-theme="dark"] .btn-primary {
+    background-color: #3fb950 !important;
+    border-color: #3fb950 !important;
+    color: #ffffff !important;
+}
+
+html[data-bs-theme="dark"] .btn-primary:hover {
+    background-color: #2ea043 !important;
+    border-color: #2ea043 !important;
+}
+
+/* Mejorar textos en modo oscuro */
+html[data-bs-theme="dark"] .card-body {
+    color: #e6edf3 !important;
+}
+
+html[data-bs-theme="dark"] h1,
+html[data-bs-theme="dark"] h2,
+html[data-bs-theme="dark"] h3,
+html[data-bs-theme="dark"] h4 {
+    color: #e6edf3 !important;
+}
+
+html[data-bs-theme="dark"] .text-muted,
+html[data-bs-theme="dark"] .lead {
+    color: #8b949e !important;
+}
+
+html[data-bs-theme="dark"] a {
+    color: #58a6ff !important;
+}
+
+html[data-bs-theme="dark"] a:hover {
+    color: #79c0ff !important;
+}
+
+/* COLOR DEL LOGO "ALPHA SENTINEL" EN MODO OSCURO - MÁS CLARO Y VISIBLE */
+html[data-bs-theme="dark"] .row.mt-4.mx-auto div[style*="fontSize"] {
+    color: #79c0ff !important;
+}
+
+/* Eliminar cualquier efecto de glow global */
+html[data-bs-theme="dark"] * {
+    text-shadow: none !important;
+}
+
+/* Asegurar que no haya sombras azules en ningún elemento */
+html[data-bs-theme="dark"] .wrapper,
+html[data-bs-theme="dark"] .auth-layout,
+html[data-bs-theme="dark"] .stack {
+    box-shadow: none !important;
+    filter: none !important;
+}

@@ -1,0 +1,10 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = git@gitlab.nexaragroup.co:giovanydevelops/capitalmarket/backend.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[pull]
+	rebase = false

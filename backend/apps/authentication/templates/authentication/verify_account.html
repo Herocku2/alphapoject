@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación de Cuenta</title>
+    <style>
+        /* Estilos generales para el cuerpo del correo */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #202124; /* Color de fondo oscuro general */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Asegura que las tablas ocupen todo el ancho y no tengan bordes por defecto */
+        table {
+            border-spacing: 0;
+        }
+        /* Estilos para el texto y los enlaces */
+        td {
+            padding: 0;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #EAEAEA;
+        }
+        a {
+            color: #FBC02D;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #22272F;">
+        <tr>
+            <td align="center" style="padding: 20px 0;">
+                <table width="600" border="0" cellspacing="0" cellpadding="0" style="width: 100%; max-width: 600px; background-color: #22272F; color: #EAEAEA; border-radius: 8px; overflow: hidden;">
+                    
+                    <tr>
+                        <td align="center" style="padding: 40px 0 20px 0;">
+                            <img src="https://app.smartsolution.fund/smartsolutionlogo.png" alt="Smart Solution Logo" width="350" style="display: block;">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding: 0 40px 40px 40px;">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                
+                                <tr>
+                                    <td style="font-size: 18px; color: #EAEAEA; padding-bottom: 25px;">
+                                        Hola, {{user_name}}
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="font-size: 16px; color: #EAEAEA; padding-bottom: 20px; line-height: 1.5;">
+                                        ¡Gracias por registrarte en <strong>Smart Solution</strong>!
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td style="font-size: 16px; color: #EAEAEA; padding-bottom: 30px; line-height: 1.5;">
+                                        Solo falta un paso. Haz clic en el siguiente botón para verificar tu dirección de correo y activar tu cuenta.
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td align="center" style="padding-bottom: 30px;">
+                                        <table border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td align="center" style="background-color: #FBC02D; border-radius: 8px;">
+                                                    <a href="{{verification_url}}" target="_blank" style="padding: 14px 25px; font-size: 16px; font-weight: bold; color: #000000; text-decoration: none; display: inline-block; border-radius: 8px;">
+                                                        Verificar mi Cuenta
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td align="center" style="font-size: 14px; color: #A0A0A0; padding-bottom: 20px;">
+                                        Este enlace de verificación expirará en 24 horas.
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="font-size: 14px; color: #A0A0A0; padding-bottom: 20px; line-height: 1.5;">
+                                        Si el botón no funciona, copia y pega el siguiente enlace en tu navegador:
+                                        <br>
+                                        <a href="{{verification_url}}" target="_blank" style="color: #FBC02D; text-decoration: underline;">
+                                            [{{verification_url}}]
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="font-size: 14px; color: #A0A0A0; padding-bottom: 30px; line-height: 1.5;">
+                                        Si no creaste esta cuenta, puedes ignorar este correo de forma segura.
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="font-size: 16px; color: #EAEAEA; line-height: 1.5;">
+                                        El equipo de <strong>Smart Solution</strong>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

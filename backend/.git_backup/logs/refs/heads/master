@@ -1,0 +1,18 @@
+0000000000000000000000000000000000000000 fb800d70968466124816e113d3a315a4bbb76fcc Javier Parada <javier.parada@nexaragroup.co> 1728502726 -0500	commit (initial): initial commit
+fb800d70968466124816e113d3a315a4bbb76fcc 3ee3ce8432d81d99d872af5f2074f7c856736847 Javier Parada <javier.parada@nexaragroup.co> 1728590218 -0500	commit: feat: new profile secret code to update
+3ee3ce8432d81d99d872af5f2074f7c856736847 0b62c34262bb900c0d79d4bd742773b5bb84664b Javier Parada <javier.parada@nexaragroup.co> 1728592937 -0500	commit: feat: added translations and set production delete payment.tasks
+0b62c34262bb900c0d79d4bd742773b5bb84664b 1f513c057ce74fe60177794a26e5ccdd2ec2268d Javier Parada <javier.parada@nexaragroup.co> 1728593363 -0500	commit: resolved user avatar get media url
+1f513c057ce74fe60177794a26e5ccdd2ec2268d 7151ecd2653838cb709566ffd45642157b0afaf0 Javier Parada <javier.parada@nexaragroup.co> 1728593777 -0500	commit: feat: resolved email server and apikeys and secrets safe
+7151ecd2653838cb709566ffd45642157b0afaf0 ac9c21efd93bfdd6da688fe5ac6ca843582350cd Javier Parada <javier.parada@nexaragroup.co> 1728596172 -0500	commit: bugfix: resolved sender email proxy translation
+ac9c21efd93bfdd6da688fe5ac6ca843582350cd 045e1f762dcc57970c464ba4b4f9a1a885df7f60 Javier Parada <javier.parada@nexaragroup.co> 1728614638 -0500	commit: resolve bug coinpayments and delete $ in plan name
+045e1f762dcc57970c464ba4b4f9a1a885df7f60 6a8d2e525632c958faa2fb25f93585c5480971fb Javier Parada <javier.parada@nexaragroup.co> 1728615781 -0500	commit: bugfix: resolved user investment value in tree
+6a8d2e525632c958faa2fb25f93585c5480971fb 0b42299c7d98dda4b4f8b7ce5ca2421f853626aa Javier Parada <javier.parada@nexaragroup.co> 1728669170 -0500	commit: feat: resolved conlifcts in avatar
+0b42299c7d98dda4b4f8b7ce5ca2421f853626aa 84b92a0d39fa3281a27223b5451a3413074285f8 Javier Parada <javier.parada@nexaragroup.co> 1728669545 -0500	commit: feat: change email
+84b92a0d39fa3281a27223b5451a3413074285f8 fc9fc97755ea71f8e0bdd0f143c65767c29a3967 Javier Parada <javier.parada@nexaragroup.co> 1728863222 -0500	commit: setup IsAuthetnicated and resolve daily task
+fc9fc97755ea71f8e0bdd0f143c65767c29a3967 1db351df3853191057dee4ffb3a7c485e1b46299 Javier Parada <javier.parada@nexaragroup.co> 1729269101 -0500	commit: bugfix: resolved transaction fee
+1db351df3853191057dee4ffb3a7c485e1b46299 71ac95182197a12647fb10ee9f72e63042af5890 Javier Parada <javier.parada@nexaragroup.co> 1729787243 -0500	commit: feat: resolved user amount to withdraw
+71ac95182197a12647fb10ee9f72e63042af5890 a37cd0183f9b10710bb11a0ff43d0caa4b7778e7 Javier Parada <javier.parada@nexaragroup.co> 1730342210 -0500	commit: feat: new master codes and extra payments
+a37cd0183f9b10710bb11a0ff43d0caa4b7778e7 7b338cd7349b7a870d88b302c10aea7e99a0b5a1 Javier Parada <javier.parada@nexaragroup.co> 1730347891 -0500	commit: setup secret code
+7b338cd7349b7a870d88b302c10aea7e99a0b5a1 328754aafa188c42720e9abc5406fb5c159ccedf Javier Parada <javier.parada@nexaragroup.co> 1730348028 -0500	commit: expire async task
+328754aafa188c42720e9abc5406fb5c159ccedf 185035b5ee371fed001557570a1791ba76cab58d Javier Parada <javier.parada@nexaragroup.co> 1730679187 -0500	commit: feat: resolved changes
+185035b5ee371fed001557570a1791ba76cab58d 8b44fe8cca14ac240b0f613d9a650265ab8d4625 Javier Parada <javier.parada@nexaragroup.co> 1731285665 -0500	commit: bugfix: executed pasive daily

@@ -1,0 +1,84 @@
+.form-control {
+  background-color: #eeeeee !important;
+  color: black !important;
+}
+
+.form-control::placeholder {
+  color: rgb(129, 129, 129) !important;
+}
+
+html[data-content-skin=modern][data-bs-theme=dark] .form-control {
+  background-color: #4b4b4b !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+html[data-content-skin=modern][data-bs-theme=dark] .form-control::placeholder {
+  color: rgb(180, 180, 180) !important;
+}
+
+
+/* Fuerza que las barras de SimpleBar estén siempre visibles */
+.simplebar-scrollbar::before {
+  opacity: 1 !important;
+}
+
+.simplebar-track.simplebar-vertical,
+.simplebar-track.simplebar-horizontal {
+  visibility: visible !important;
+}
+
+/* Estilos para que react-phone-number-input se vea como un campo de Bootstrap */
+.PhoneInput {
+  display: flex;
+  align-items: center;
+}
+
+.PhoneInputInput {
+  flex: 1;
+  min-width: 0;
+  height: calc(1.5em + 1rem + 2px);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: #4b4b4b;
+  background-clip: padding-box;
+  border: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-left: none;
+  /* Quitamos el borde izquierdo que ya tiene el selector */
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.PhoneInputCountry {
+  margin-right: 0;
+  /* Ajuste para que se pegue al input */
+  color: #ffffff;
+  background-color: #4b4b4b;
+  padding: 12px;
+}
+
+.PhoneInputInput:focus {
+  color: #ffffff;
+  background-color: #4b4b4b;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Estilo para el estado inválido */
+.PhoneInput--invalid .PhoneInputInput,
+.PhoneInput--invalid .PhoneInputCountrySelect {
+  border-color: #dc3545;
+}
+
+.PhoneInput--invalid .PhoneInputInput:focus {
+  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+}
+
+.over-withdrawn {
+  background-color: rgba(var(--window-warning), 0.25) !important;
+}
