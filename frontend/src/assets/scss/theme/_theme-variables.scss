@@ -46,26 +46,26 @@ $grays-dark: (
 
 // Updated
 // scss-docs-start color-variables
-$primary: #7cb9e8;
-$secondary: #a7c7e7;
-$blue: #89cff0;
-$indigo: #b4c7e7;
+$primary: #FF6B00;
+$secondary: #64748B;
+$blue: #3B82F6;
+$indigo: #6366f1;
 $purple: #d5aaff;
 $pink: #ffd1dc;
-$red: #ffb3ba;
-$danger: #ffb6c1;
-$orange: #ffd8b1;
-$yellow: #fffacd;
-$warning: #ffe5b4;
-$green: #98d8c8;
-$success: #a8e6cf;
-$info: #a7c7e7;
-$teal: #88d8c0;
-$cyan: #9fe2bf;
-$dark: #2c3e50;
-$light: #f0f8ff;
+$red: #EF4444;
+$danger: #EF4444;
+$orange: #FF6B00;
+$yellow: #F59E0B;
+$warning: #F59E0B;
+$green: #10B981;
+$success: #10B981;
+$info: #3B82F6;
+$teal: #14b8a6;
+$cyan: #06b6d4;
+$dark: #0F172A;
+$light: #F1F5F9;
 $white: #ffffff;
-$black: #000000;
+$black: #020617;
 // scss-docs-end color-variables
 
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
@@ -444,8 +444,8 @@ $position-values: (
 // Settings for the `<body>` element.
 
 $body-text-align: left; // Changed
-$body-color: #4a7c8e; // Changed
-$body-bg: #ffffff; // Changed
+$body-color: #475569; // Text secondary in SaaS
+$body-bg: #F1F5F9; // bg-deep in SaaS
 
 $body-secondary-color: $gray-500; // Changed
 $body-secondary-bg: $gray-200;
@@ -570,12 +570,13 @@ $border-color-translucent: rgba($black, 0.175);
 
 // scss-docs-start border-radius-variables
 $border-radius: 0.25rem; // Changed
-$border-radius-xs: 0.15rem; // Changed
-$border-radius-sm: 0.313rem; // Changed
-$border-radius-md: 0.5rem; // Changed
-$border-radius-lg: 0.625rem; // Changed
-$border-radius-xl: 1rem; // Changed
-$border-radius-xxl: 1.5rem; // Changed
+$border-radius: 0.75rem; // Changed to match 12px
+$border-radius-xs: 0.25rem; // Changed
+$border-radius-sm: 0.375rem; // Changed to match 6px
+$border-radius-md: 0.75rem; // Changed to match 12px
+$border-radius-lg: 1.25rem; // Changed to match 20px
+$border-radius-xl: 2rem; // Changed to match 32px
+$border-radius-xxl: 2.5rem; // Changed
 $border-radius-pill: 50rem;
 // scss-docs-end border-radius-variables
 // fusv-disable
@@ -583,10 +584,10 @@ $border-radius-2xl: $border-radius-xxl; // Deprecated in v5.3.0
 // fusv-enable
 
 // scss-docs-start box-shadow-variables
-$box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
-$box-shadow-xs: 0 0.075rem 0.25rem rgba($black, 0.075);
-$box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075);
-$box-shadow-lg: 0 1rem 3rem rgba($black, 0.175);
+$box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+$box-shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$box-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$box-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 $box-shadow-inset: inset 0 1px 2px rgba($black, 0.075);
 // scss-docs-end box-shadow-variables
 
@@ -631,8 +632,7 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: 'Public Sans',
-  'Inter',
+$font-family-sans-serif: 'Inter',
   system-ui,
   -apple-system,
   'Segoe UI',

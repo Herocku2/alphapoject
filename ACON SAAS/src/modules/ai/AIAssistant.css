@@ -1,0 +1,229 @@
+.ai-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: calc(100vh - 160px);
+}
+
+.ai-layout {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 32px;
+    height: 100%;
+}
+
+.chat-section {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--neutral-100);
+}
+
+.chat-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--neutral-100);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ai-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 700;
+    color: var(--primary-900);
+}
+
+.ai-badge svg {
+    color: var(--primary-600);
+}
+
+.ai-status {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--accent-green);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--accent-green);
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.chat-body {
+    flex: 1;
+    padding: 24px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-image: radial-gradient(var(--neutral-100) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.message {
+    max-width: 80%;
+    display: flex;
+}
+
+.message.assistant {
+    align-self: flex-start;
+}
+
+.message.user {
+    align-self: flex-end;
+}
+
+.msg-content {
+    padding: 12px 16px;
+    border-radius: var(--radius-md);
+    font-size: 0.9375rem;
+    line-height: 1.5;
+}
+
+.assistant .msg-content {
+    background-color: var(--white);
+    color: var(--neutral-800);
+    border: 1px solid var(--neutral-100);
+    box-shadow: var(--shadow-sm);
+    border-bottom-left-radius: 0;
+}
+
+.user .msg-content {
+    background: linear-gradient(135deg, var(--primary-600), var(--primary-700));
+    color: var(--white);
+    border-bottom-right-radius: 0;
+}
+
+.chat-footer {
+    padding: 20px 24px;
+    background-color: var(--white);
+    border-top: 1px solid var(--neutral-100);
+}
+
+.suggestions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.suggestion-pill {
+    padding: 8px 14px;
+    background-color: var(--neutral-50);
+    border: 1px solid var(--neutral-100);
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--neutral-600);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.suggestion-pill:hover {
+    background-color: var(--neutral-100);
+    color: var(--primary-600);
+}
+
+.input-area {
+    display: flex;
+    gap: 12px;
+    background-color: var(--neutral-50);
+    padding: 8px 8px 8px 20px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--neutral-200);
+}
+
+.input-area input {
+    flex: 1;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 0.875rem;
+}
+
+.send-btn {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-600);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.send-btn:hover {
+    background-color: var(--primary-700);
+    transform: scale(1.05);
+}
+
+.knowledge-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.capability-card {
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--neutral-100);
+    display: flex;
+    gap: 16px;
+    transition: all 0.2s ease;
+}
+
+.capability-card:hover {
+    transform: translateX(5px);
+    border-color: var(--primary-300);
+}
+
+.cap-icon {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(59, 130, 246, 0.1);
+    color: var(--primary-600);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.cap-info strong {
+    display: block;
+    font-size: 0.9375rem;
+    margin-bottom: 4px;
+}
+
+.cap-info p {
+    font-size: 0.8125rem;
+    color: var(--neutral-500);
+}

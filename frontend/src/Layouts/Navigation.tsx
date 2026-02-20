@@ -137,7 +137,7 @@ const Navigation = () => {
       <aside className="leftside-menu position-fixed top-0 bottom-0 z-1040">
         <div className="navigation-header top-0 sticky-top z-1020 px-4">
           <Link to="/">
-            <Logo url={!menuOpen ? "/favicon.png": ""}/>
+            <Logo url="/images/alpha-logo.png" />
           </Link>
         </div>
         <SimpleBar
@@ -151,15 +151,15 @@ const Navigation = () => {
           {
             menuOpen && (
               <div className='px-4 mt-4'>
-                <Button 
-                  variant="primary" 
+                <Button
+                  variant="primary"
                   className='w-100 mb-2'
                   onClick={() => setShowReportModal(true)}
                 >
                   {t("Reporte")}
                 </Button>
-                <Button 
-                  variant="secondary" 
+                <Button
+                  variant="secondary"
                   className='w-100'
                   onClick={() => setShowTradingModal(true)}
                 >

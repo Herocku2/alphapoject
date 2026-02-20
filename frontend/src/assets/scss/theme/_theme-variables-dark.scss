@@ -11,25 +11,25 @@ html[data-bs-theme="dark"] {
         --#{$prefix}gray-#{$color}: #{$value};
     }
 
-    /* Dark Colors SCSS */
-    --#{$prefix}dark: #{$light};
-    --#{$prefix}light: #{$dark};
-    --#{$prefix}heading-color: #{$white};
-    --#{$prefix}link-hover-color: #{$primary};
+    /* Dark Minimalistic Deep Navy Colors SCSS to match ACON SaaS */
+    --#{$prefix}dark: #F1F5F9;
+    --#{$prefix}light: #0F172A;
+    --#{$prefix}heading-color: #FFFFFF;
+    --#{$prefix}link-hover-color: #FF6B00;
     --#{$prefix}dark-rgb: #{to-rgb($light)};
-    --#{$prefix}border-color: #{$gray-dark-200};
-    --#{$prefix}light-rgb: #{to-rgb($gray-dark-300)};
-    --#{$prefix}link-color: #{to-rgb($gray-dark-900)};
-    --#{$prefix}link-color-rgb: #{to-rgb($gray-dark-900)};
-    --#{$prefix}link-hover-color-rgb: #{to-rgb($primary)};
+    --#{$prefix}border-color: #334155;
+    --#{$prefix}light-rgb: #{to-rgb(#0F172A)};
+    --#{$prefix}link-color: #94A3B8;
+    --#{$prefix}link-color-rgb: #{to-rgb(#94A3B8)};
+    --#{$prefix}link-hover-color-rgb: #{to-rgb(#FF6B00)};
 
     /* Dark Subtle SCSS */
-    --#{$prefix}primary-bg-subtle: #0d419d;
-    --#{$prefix}secondary-bg-subtle: #30363d;
-    --#{$prefix}success-bg-subtle: #0f5323;
-    --#{$prefix}info-bg-subtle: #1c2d41;
-    --#{$prefix}warning-bg-subtle: #4a3f2a;
-    --#{$prefix}danger-bg-subtle: #5a1e1e;
-    --#{$prefix}light-bg-subtle: #21262d;
-    --#{$prefix}dark-bg-subtle: #161b22;
+    --#{$prefix}primary-bg-subtle: rgba(255, 107, 0, 0.15);
+    --#{$prefix}secondary-bg-subtle: #1E293B;
+    --#{$prefix}success-bg-subtle: rgba(16, 185, 129, 0.15);
+    --#{$prefix}info-bg-subtle: rgba(59, 130, 246, 0.15);
+    --#{$prefix}warning-bg-subtle: rgba(245, 158, 11, 0.15);
+    --#{$prefix}danger-bg-subtle: rgba(239, 68, 68, 0.15);
+    --#{$prefix}light-bg-subtle: #1E293B;
+    --#{$prefix}dark-bg-subtle: #020617;
 }

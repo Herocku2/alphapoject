@@ -43,7 +43,7 @@ const Dashboard = () => {
             {user?.username}
           </h1>
           <div className='d-flex flex-row gap-5'>
-            <Button onClick={() => navigate("/deposits")} variant='success' className='px-5' style={{ width: "200px" }}>
+            <Button onClick={() => navigate("/deposits")} variant='primary' className='px-5' style={{ width: "200px" }}>
               {t("Deposits")}
 
             </Button>
@@ -58,9 +58,9 @@ const Dashboard = () => {
             <div className="card-body">
               <p className="text-secondary small mb-2">{t('Investment value')}</p>
               <h4 className="mb-3">${data?.investment_amount.toLocaleString('en-US', {
-  minimumFractionDigits: 2,
-  maximumFractionDigits: 2
-}) || 0} USD</h4>
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+              }) || 0} USD</h4>
               <span className="badge badge-light text-bg-danger"><i className="me-1 bi bi-arrow-down-short" />{new Date(data?.withdrawable_date || "").toLocaleDateString()}</span>
             </div>
           </div>
@@ -70,13 +70,13 @@ const Dashboard = () => {
             <div className="card-body">
               <p className="text-secondary small mb-2">{t('Earns')} de {new Date().toLocaleString('es', { month: 'long' })}</p>
               <h4 className="mb-3">${data?.daily_payment?.toLocaleString('en-US', {
-  minimumFractionDigits: 2,
-  maximumFractionDigits: 2
-}) || 0} USD</h4>
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+              }) || 0} USD</h4>
               <span className="badge badge-light text-bg-success"><i className="me-1 bi bi-arrow-down-short" />+{data?.daily_percentage.toLocaleString('en-US', {
-  minimumFractionDigits: 2,
-  maximumFractionDigits: 2
-})}%</span>
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+              })}%</span>
             </div>
           </div>
         </div>
@@ -85,9 +85,9 @@ const Dashboard = () => {
             <div className="card-body">
               <p className="text-secondary small mb-2">{t('Total Profit')}</p>
               <h4 className="mb-3">${data?.total_profit.toLocaleString('en-US', {
-  minimumFractionDigits: 2,
-  maximumFractionDigits: 2
-}) || 0} USD</h4>
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+              }) || 0} USD</h4>
               <span className="badge badge-light text-bg-info"><i className="me-1 bi bi-arrow-down-short" />{data?.days_profit} {t("days")}</span>
             </div>
           </div>

@@ -12,14 +12,7 @@ $color-schemes: (
 );
 
 @mixin setTheme($theme, $color, $shade: 0) {
-  --#{$prefix}primary: var(--#{$prefix}#{$theme});
-  --#{$prefix}primary-rgb: var(--#{$prefix}#{$theme}-rgb);
-  --#{$prefix}primary-bg-subtle: var(--#{$prefix}#{$theme}-bg-subtle);
-  --#{$prefix}component-active-color: var(--#{$prefix}#{$theme});
-  --#{$prefix}component-active-bg: var(--#{$prefix}#{$theme});
-  --#{$prefix}link-hover-color: var(--#{$prefix}#{$theme});
-  --#{$prefix}link-hover-color-rgb: var(--#{$prefix}#{$theme}-rgb);
-  --#{$prefix}input-border-color: var(--#{$prefix}#{$theme});
+  /* Ignored global primary override to enforce ACON Saas Orange Theme */
 
   /* <--! Navigation !--> */
   --#{$prefix}menu-item-active-bg: #{rgba($color, 0.1)};
@@ -86,6 +79,7 @@ $color-schemes: (
 
   .card {
     &-primary {
+
       .card-header,
       .card-title,
       .card-body,
@@ -105,6 +99,7 @@ $color-schemes: (
       border-color: var(--#{$prefix}#{$theme});
 
       .dropdown-item {
+
         &:hover,
         &:hover,
         &:active {
@@ -154,6 +149,7 @@ $color-schemes: (
 
   .nav-theme-tabs-primary {
     .nav-link {
+
       &.show,
       &.active,
       &:hover:not(.disabled) {
@@ -165,6 +161,7 @@ $color-schemes: (
 
   .nav-rich-content-primary {
     .nav-link {
+
       &.active,
       &.show,
       &:hover:not(.disabled) {
@@ -229,22 +226,26 @@ $color-schemes: (
     --#{$prefix}menu-item-hover-color: #{$gray-900};
     --#{$prefix}menu-item-active-color: #{$gray-200};
     --#{$prefix}menu-item-active-bg: #{darken($color, 10%)};
+
     .leftside-menu {
       --#{$prefix}dark: #{$gray-200};
       --#{$prefix}primary: #{$gray-200};
       --#{$prefix}secondary-color: #{$gray-200};
       --#{$prefix}tertiary-bg: #{$color};
+
       .side-nav {
         .nav-title {
           color: #{$gray-900};
         }
       }
+
       .nav-card {
         .text-primary {
           color: #{$gray-200} !important;
         }
       }
     }
+
     .wrapper {
       .topnav-content {
         --#{$prefix}dark: #{$gray-200};
@@ -254,6 +255,7 @@ $color-schemes: (
       }
     }
   }
+
   &[data-bs-theme='dark'][data-navigation-skin='brand'] {
     --#{$prefix}menu-item-color: #{$gray-200};
     --#{$prefix}menu-dot-color: #{$gray-200};
@@ -269,6 +271,7 @@ $color-schemes: (
     --#{$prefix}menu-item-hover-color: #{$color};
     --#{$prefix}menu-item-active-color: #{$color};
     --#{$prefix}menu-item-active-bg: #{rgba($color, 0.1)};
+
     .leftside-menu {
       --#{$prefix}tertiary-bg: #{transparent};
     }
@@ -281,6 +284,7 @@ $color-schemes: (
     --#{$prefix}menu-item-hover-color: #{$color};
     --#{$prefix}menu-item-active-color: #{$gray-200};
     --#{$prefix}menu-item-active-bg: #{$color};
+
     .leftside-menu {
       .side-nav {
         .active {
@@ -292,9 +296,11 @@ $color-schemes: (
           }
         }
       }
+
       .nav-card {
         background-color: #{darken($color, 10%)};
         border-color: #{darken($color, 12%)};
+
         .text-primary {
           color: #{$gray-200} !important;
         }

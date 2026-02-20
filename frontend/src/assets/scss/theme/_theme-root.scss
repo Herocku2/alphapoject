@@ -21,8 +21,8 @@
   --#{$prefix}body-bg-smooth: #ffffff;
   --#{$prefix}body-bg-modern: #ffffff;
   --#{$prefix}body-bg-dark: #0d1117;
-  --#{$prefix}tertiary-bg-dark: #161b22;
-  --#{$prefix}tertiary-bg-dark-primary: #1c2128;
+  --#{$prefix}tertiary-bg-dark: #0F172A;
+  --#{$prefix}tertiary-bg-dark-primary: #1E293B;
   --#{$prefix}border-color-dark-primary: #30363d;
   --#{$prefix}body-bg-modern-dark: #0d1117;
   --#{$prefix}box-shadow-modern: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
@@ -59,11 +59,11 @@ html[data-navigation-skin='dark'] {
 html[data-navigation-skin='dark'],
 html[data-bs-theme='dark'][data-navigation-skin='light'],
 html[data-bs-theme='dark'][data-navigation-skin='dark'] {
-  --#{$prefix}menu-item-color: #{$gray-500};
-  --#{$prefix}menu-dot-color: #{$gray-500};
-  --#{$prefix}menu-item-hover-color: var(--#{$prefix}primary);
-  --#{$prefix}menu-item-active-color: var(--#{$prefix}primary);
-  --#{$prefix}menu-iconbar-link-bg: #162339;
+  --#{$prefix}menu-item-color: #94A3B8;
+  --#{$prefix}menu-dot-color: #94A3B8;
+  --#{$prefix}menu-item-hover-color: var(--#{$prefix}white);
+  --#{$prefix}menu-item-active-color: var(--#{$prefix}white);
+  --#{$prefix}menu-iconbar-link-bg: #1E293B;
 }
 
 html[data-navigation-skin='brand'],

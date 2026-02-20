@@ -1,0 +1,82 @@
+.vpricing-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.vpricing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 32px;
+}
+
+.vpricing-tabs {
+    background-color: var(--bg-surface);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-light);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.v-table {
+    width: 100%;
+}
+
+.v-header {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1.2fr 1.2fr 1.2fr 1.5fr;
+    padding: 14px 32px;
+    background-color: var(--deep-black);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.v-row {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1.2fr 1.2fr 1.2fr 1.5fr;
+    padding: 18px 32px;
+    border-bottom: 1px solid var(--border-light);
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.v-row:hover {
+    background-color: var(--bg-deep);
+}
+
+.v-name {
+    font-weight: 700;
+    color: var(--deep-black);
+}
+
+.v-route {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.v-rate {
+    font-weight: 800;
+    color: var(--primary-orange);
+}
+
+.v-status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.75rem;
+    color: #10B981;
+    font-weight: 600;
+}
+
+/* Wizard inherits styles from Operations.css but we refine a few */
+.ai-badge {
+    background: var(--primary-orange-soft);
+    color: var(--primary-orange);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 800;
+}

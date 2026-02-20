@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+:root {
+  /* Core Palette - Institutional & Premium */
+  --primary-orange: #FF6B00;
+  --primary-orange-hover: #E66000;
+  --primary-orange-soft: rgba(255, 107, 0, 0.08);
+
+  /* Institutional Deep Slate */
+  --institutional-dark: #0F172A;
+  --institutional-sidebar: #1E293B;
+  --institutional-accent: #334155;
+
+  --deep-black: #020617;
+  --black-hover: #000000;
+
+  --bg-deep: #F1F5F9;
+  --bg-surface: #FFFFFF;
+  --bg-card: #FFFFFF;
+
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #94A3B8;
+
+  --border-light: #E2E8F0;
+  --border-medium: #CBD5E1;
+
+  --accent-green: #10B981;
+  --accent-gold: #F59E0B;
+
+  /* Legacy palette mapping */
+  --primary-900: var(--institutional-dark);
+  --primary-800: var(--bg-surface);
+  --primary-700: var(--bg-surface);
+  --primary-600: var(--primary-orange);
+  --primary-500: var(--primary-orange);
+
+  --neutral-900: var(--text-primary);
+  --neutral-800: var(--text-secondary);
+  --neutral-700: var(--text-muted);
+  --neutral-400: #94A3B8;
+  --neutral-300: #CBD5E1;
+  --neutral-100: #F1F5F9;
+  --neutral-50: var(--bg-deep);
+
+  --white: #ffffff;
+
+  /* Status Colors */
+  --success: var(--accent-green);
+  --warning: var(--accent-gold);
+  --danger: #EF4444;
+  --info: #3B82F6;
+
+  /* Premium Shadows - Multi-layered for depth */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-premium: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.03);
+
+  /* Borders */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 32px;
+
+  /* Typography System */
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-headings: 'Plus Jakarta Sans', var(--font-main);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-deep);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "cv02", "cv05", "cv08", "ss01";
+  line-height: 1.5;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Glassmorphism Utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card-glass {
+  background: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-glass:hover {
+  box-shadow: var(--shadow-premium);
+  transform: translateY(-4px);
+  border-color: rgba(255, 107, 0, 0.15);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-orange);
+}
+
+/* Typography Scale - Refined for Executive presence */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-headings);
+  color: var(--institutional-dark);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+h1 {
+  font-size: 2.75rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  letter-spacing: -0.01em;
+}
+
+small {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Global Utilities */
+.text-orange {
+  color: var(--primary-orange);
+}
+
+.bg-orange {
+  background-color: var(--primary-orange);
+}
+
+.border-orange {
+  border-color: var(--primary-orange);
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.badge-premium {
+  padding: 6px 12px;
+  border-radius: 30px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: var(--bg-deep);
+  color: var(--institutional-dark);
+  border: 1px solid var(--border-light);
+}
