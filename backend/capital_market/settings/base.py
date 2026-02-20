@@ -266,6 +266,7 @@ CELERY_TIMEZONE = TIME_ZONE
 CELERY_TASK_TRACK_STARTED = True
 CELERY_TASK_TIME_LIMIT = 30 * 60
 CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True
+CELERY_TASK_ALWAYS_EAGER = True # Ejecutar tareas síncronamente (sin broker) para evitar errores de conexión
 FRONTEND_DOMAIN="localhost:5173"
 
 # DATABASES = {

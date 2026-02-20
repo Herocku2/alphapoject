@@ -93,7 +93,12 @@ class EmailVerificationAdmin(admin.ModelAdmin):
     list_display = ('user', 'code', 'created_at', 'expires_at', 'is_expired_display')
     search_fields = ('user__email', 'code')
     list_filter = ('created_at', 'expires_at')
-    readonly_fields = ('code', 'created_at', 'expires_at', 'user')
+    readonly_fields = ('code', 'created_at', 'expires_at')
+
+    def get_readonly_fields(self, request, obj=None):
+        if obj:
+            return self.readonly_fields + ('user',)
+        return self.readonly_fields
 
     def is_expired_display(self, obj):
         return obj.is_expired()

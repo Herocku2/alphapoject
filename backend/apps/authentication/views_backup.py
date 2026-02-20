@@ -154,17 +154,19 @@ class RegisterView(APIView):
     @transaction.atomic
     def post(self, request, ref_code, *args, **kwargs):
         try:
-            data = request.data.copy()
-            hcaptcha_token = data.pop("hcaptcha", None)
+            hcaptcha_token = request.data.get("hcaptcha")
             self.verify_hcaptcha(hcaptcha_token)
-            data.pop("password2", None)
             if ref_code:
                 user_referred = User.objects.filter(ref_code=ref_code).last()
                 if not user_referred:
                     user_referred = GeneralSettings.objects.first().root_user
-                user_serializer = UserSerializer(data=data)
+                # else:
+                #     partner_investment = UserInvestment.objects.filter(user=user_referred).last()
+                #     if not partner_investment or  (partner_investment and not partner_investment.is_active):
+                #         raise ValueError(_("Partner currently hasn't an active investment. Please contact your partner."))
+                user_serializer = UserSerializer(data=request.data)
                 user_serializer.is_valid()
-                user_exists = User.objects.filter(email=data.get("email")).exists()
+                user_exists = User.objects.filter(email=request.data.get("email")).exists()
                 if user_exists:
                     return Response(data=_("Email address already exists, try again new email."), status=status.HTTP_403_FORBIDDEN)
                 if user_serializer.is_valid():
@@ -173,8 +175,13 @@ class RegisterView(APIView):
                     Referr.objects.create(referred=user_serializer.instance, user=user_referred,)
                     user_serializer.instance.is_active = False
                     user_serializer.instance.save()
+                    # insert_user(user=user_serializer.instance)
                     refresh = RefreshToken.for_user(user_serializer.instance)
                     EmailVerification.objects.create(user=user_serializer.instance)
+                    # response_data = {
+                    #     'access': str(refresh.access_token),
+                    #     'refresh': str(refresh)
+                    # }
                     transaction.on_commit(lambda: send_verification_email_task.apply_async((user_serializer.instance.id,)) )
                     
                     return Response(data={"message":"Por favor verifica la cuenta"}, status=status.HTTP_201_CREATED)
@@ -183,6 +190,9 @@ class RegisterView(APIView):
             else:
                 return Response(data=_('Referral code is not valid'), status=status.HTTP_403_FORBIDDEN)
         except Exception as e:
+            print(f"Error during registration: {e}")  # DEBUG LOG
+            import traceback
+            traceback.print_exc()
             return Response(data=str(e), status=status.HTTP_403_FORBIDDEN)
 
     
