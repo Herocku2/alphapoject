@@ -71,8 +71,13 @@ class UserAdmin(BaseUserAdmin, SimpleHistoryAdmin):
         """Permitir eliminación de usuarios (eliminará registros relacionados en cascada)"""
         return True
     
+    @admin.action(description='Activar usuarios seleccionados')
+    def activate_users(self, request, queryset):
+        updated = queryset.update(is_active=True)
+        self.message_user(request, f"{updated} usuarios fueron activados correctamente.")
+
     # Asegurar que la acción de eliminación esté disponible
-    actions = ['delete_selected']
+    actions = ['delete_selected', 'activate_users']
 
     # --- Funciones para Campos Personalizados ---
     def avatar_thumbnail(self, obj):
@@ -94,6 +99,18 @@ class EmailVerificationAdmin(admin.ModelAdmin):
     search_fields = ('user__email', 'code')
     list_filter = ('created_at', 'expires_at')
     readonly_fields = ('code', 'created_at', 'expires_at')
+
+    @admin.action(description='Activar usuario asociado a la verificación')
+    def activate_users_from_verification(self, request, queryset):
+        users_activated = 0
+        for ev in queryset:
+            if not ev.user.is_active:
+                ev.user.is_active = True
+                ev.user.save(update_fields=['is_active'])
+                users_activated += 1
+        self.message_user(request, f"{users_activated} usuarios fueron activados correctamente.")
+        
+    actions = ['activate_users_from_verification']
 
     def get_readonly_fields(self, request, obj=None):
         if obj:
