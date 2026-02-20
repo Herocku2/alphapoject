@@ -76,8 +76,17 @@ class UserAdmin(BaseUserAdmin, SimpleHistoryAdmin):
         updated = queryset.update(is_active=True)
         self.message_user(request, f"{updated} usuarios fueron activados correctamente.")
 
+    @admin.action(description='Resetear contraseña a "Smart123!"')
+    def reset_password(self, request, queryset):
+        count = 0
+        for user in queryset:
+            user.set_password('Smart123!')
+            user.save(update_fields=['password'])
+            count += 1
+        self.message_user(request, f"Contraseña reseteada a 'Smart123!' para {count} usuarios.")
+
     # Asegurar que la acción de eliminación esté disponible
-    actions = ['delete_selected', 'activate_users']
+    actions = ['delete_selected', 'activate_users', 'reset_password']
 
     # --- Funciones para Campos Personalizados ---
     def avatar_thumbnail(self, obj):
