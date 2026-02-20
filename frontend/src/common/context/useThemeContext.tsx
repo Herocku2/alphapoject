@@ -59,7 +59,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
   const getDefaultSettings = () => {
     return {
-      color: ThemeSettings.color.success,
+      color: ThemeSettings.color.primary,
       layout: {
         type:
           params['layout_type'] === 'horizontal'
@@ -72,32 +72,23 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
         contentSkin: ThemeSettings.layout.contentSkin.modern,
       },
       header: {
-        theme:
-          params['header_theme'] === 'dark'
-            ? ThemeSettings.header.theme.dark
-            : ThemeSettings.header.theme.light,
+        theme: ThemeSettings.header.theme.light,
         logo: ThemeSettings.header.logo.show,
       },
       sidebar: {
-        theme:
-          params['menu_theme'] === 'dark'
-            ? ThemeSettings.sidebar.theme.dark
-            : ThemeSettings.sidebar.theme.light,
+        theme: ThemeSettings.sidebar.theme.dark,
         size: ThemeSettings.sidebar.size.default,
-        menu:
-          params['menu_item'] === 'solid'
-            ? ThemeSettings.sidebar.menu.solid
-            : ThemeSettings.sidebar.menu.soft,
+        menu: ThemeSettings.sidebar.menu.soft,
       },
-      theme: 'dark',
-      font: params['theme_font'] === 'inter' ? ThemeSettings.font.inter : ThemeSettings.font.public,
+      theme: 'light',
+      font: ThemeSettings.font.inter,
       customizer: ThemeSettings.customizer.hidden,
     }
   }
 
   const [settings, setSettings] = useState(() => {
 
-    return  getDefaultSettings()
+    return getDefaultSettings()
   })
 
   useEffect(() => {
