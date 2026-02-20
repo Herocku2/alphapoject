@@ -24,6 +24,7 @@ class UserAdmin(BaseUserAdmin, SimpleHistoryAdmin):
         'email',
         'phone_number',
         'balance',
+        'is_active',
         'is_staff',
     )
     list_filter = ('is_staff', 'is_superuser', 'is_active', 'groups', 'is_fundator',)
